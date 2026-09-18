@@ -3,7 +3,13 @@
 using namespace std;
 
 bool isSorted(const int* arr, const int size) {
-    return false;}  //stub}
+    for (int i = 1; i < size; i++) {
+        if (arr[i] < arr[i - 1]) {
+            return false;
+        }
+    }
+    return true;
+} //stub replacement
 
 void testSortedArray() {
     int arr[] = {1, 2, 3, 4, 5};
